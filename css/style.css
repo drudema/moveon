@@ -130,10 +130,9 @@ table {
     border-spacing: 0;
 }
 
-/* Start Style */
+/* ===================Start Style============================ */
 
 body {
-    /* background-color: azure; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
@@ -141,25 +140,21 @@ body {
 .container {
     width: 80%;
     margin: auto;
-
 }
 
-/* Header */
+/* =====================Header====================== */
 
 header {
     background: linear-gradient(to right, #C0C0C0, #DCDCDC);
     padding: 20px 0;
-    /* min-height: 70px; */
     color: #6A5ACD;
     border-bottom: solid 3px #DEB887;
-
 }
 
 .logo {
     font-size: 40px;
     font-weight: bold;
     float: left;
-
 }
 
 nav {
@@ -178,20 +173,19 @@ li a {
     line-height: 40px;
     text-transform: uppercase;
     padding-bottom: 3px;
-    /* border-bottom: solid 1x rgba(40, 255, 255, 0); */
     transition: 0.5s ease-in-out;
 }
 
 li a:hover {
     color: #000000;
-    border-bottom: solid 1px #6A5ACD;
+    border-bottom: solid 3px #6A5ACD;
 }
 
 li.active a {
     font-weight: bold;
 }
 
-/* showcase */
+/* ======================showcase=========================== */
 
 .showcase {
     min-height: 560px;
@@ -201,7 +195,6 @@ li.active a {
     text-align: center;
     color: #F8F8FF;
     box-sizing: border-box;
-    /* padding-top: 180px; */
 }
 
 .title {
@@ -214,12 +207,13 @@ li.active a {
     font-size: 20px;
 }
 
+/* Newslater */
+
 .newslater {
     min-height: 100px;
     /* padding: 15px 0; */
     color: #6A5ACD;
     background: linear-gradient(to left, #C0C0C0, #DCDCDC);
-
 }
 
 .newslater h1 {
@@ -235,7 +229,6 @@ li.active a {
 }
 
 .newslater input {
-    /* padding: 4px; */
     height: 35px;
     width: 250px;
 }
@@ -248,8 +241,9 @@ button {
     height: 40px;
     width: 100px;
     border: 0;
-    /* box-sizing: border-box; */
 }
+
+/* =======================box card============================= */
 
 .box {
     background-color: white;
@@ -260,11 +254,11 @@ button {
     float: left;
     text-align: center;
     width: 30%;
-    margin-left: 35px;
+    margin-left: 5px;
 }
 
 .box-1 img {
-    width: 150px;
+    width: 40%;
 }
 
 .box-1 h3 {
@@ -273,7 +267,7 @@ button {
     font-weight: bold;
 }
 
-/* footer */
+/* ============================footer===================================== */
 
 footer {
     text-align: center;
@@ -284,15 +278,11 @@ footer {
 
 span {
     font-weight: bold;
+    color: #6A5ACD;
 }
 
-
-
-
-
-
-
 /* Clearfix */
+
 header::after {
     content: "";
     display: table;
@@ -308,5 +298,92 @@ header::after {
 .box::after {
     content: "";
     display: table;
-    clear: left;
+    clear: both;
+}
+
+/* ===================================Media Query======================= */
+
+/* Tampilan dibawah 929px berlaku ini */
+
+@media(max-width:929px) {
+
+    .logo,
+    nav,
+    .box-1 {
+        float: none;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    li a {
+        font-size: 30px;
+    }
+
+    .box-1 {
+        margin: 10px auto 20px;
+        width: 70%;
+    }
+
+    .box-1 h3 {
+        font-size: 30px;
+    }
+
+    .box-1 p {
+        font-size: 23px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .showcase p {
+        font-size: 30px;
+    }
+}
+
+/* Tampilan di bawah 880px berlaku ini */
+
+@media(max-width:880px) {
+
+    .newslater h1,
+    .newslater form {
+        float: none;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .showcase p {
+        padding-top: 185px;
+    }
+}
+
+/* Tampilan berlaku dari 801px ke bawah */
+
+@media(max-width:801px) {
+
+    .logo h1,
+    .newslater h1 {
+        display: none;
+    }
+
+    ul li {
+        display: block;
+    }
+
+    form {
+        padding-top: 20px;
+    }
 }
