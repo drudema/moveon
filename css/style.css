@@ -305,7 +305,7 @@ header::after {
 
 /* Tampilan dibawah 929px berlaku ini */
 
-@media(max-width:929px) {
+@media screen and (max-width:929px) {
 
     .logo,
     nav,
@@ -352,7 +352,7 @@ header::after {
 
 /* Tampilan di bawah 880px berlaku ini */
 
-@media(max-width:880px) {
+@media screen and (max-width:880px) {
 
     .newslater h1,
     .newslater form {
@@ -372,7 +372,7 @@ header::after {
 
 /* Tampilan berlaku dari 801px ke bawah */
 
-@media(max-width:801px) {
+@media screen and (max-width:801px) {
 
     .logo h1,
     .newslater h1 {
