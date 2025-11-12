@@ -362,44 +362,42 @@ header::after {
     }
 
     .title {
-        display: none;
+        font-size: 50px;
     }
 
-    .showcase p {
-        padding-top: 185px;
+    /* Tampilan berlaku dari 801px ke bawah */
+
+    @media(max-width:801px) {
+
+        .logo h1 {
+            display: none;
+        }
+
+        ul li,
+        button {
+            display: block;
+        }
+
+        .title {
+            padding-top: 60px;
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            margin-bottom: 5px;
+            border: none;
+        }
+
+        .newslater h1 {
+            margin-bottom: -10px;
+        }
+
+        .showcase p {
+            padding-top: 50px;
+        }
     }
-}
-
-/* Tampilan berlaku dari 801px ke bawah */
-
-@media(max-width:801px) {
-
-    .logo h1,
-    .newslater h1 {
-        display: none;
-    }
-
-    ul li,
-    button {
-        display: block;
-    }
-
-    button {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    input[type="email"] {
-        width: 100%;
-        margin-bottom: 5px;
-        border: none;
-    }
-
-    .showcase p {
-        padding-top: 125px;
-    }
-
-    form {
-        padding-top: 20px;
-    }
-}
