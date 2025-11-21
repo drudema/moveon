@@ -1,275 +1,265 @@
 /* ===================Start Style================== */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 /* ===================Struktu Utama=================  */
 
 .container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 /* =====================Header====================== */
 
 header {
-    background: linear-gradient(to right, #C0C0C0, #DCDCDC);
-    padding: 20px 0;
-    color: #6A5ACD;
-    border-bottom: solid 3px #DEB887;
+  background: linear-gradient(to right, #c0c0c0, #dcdcdc);
+  padding: 20px 0;
+  color: #6a5acd;
+  border-bottom: solid 3px #deb887;
 }
 
 .logo {
-    font-size: 40px;
-    font-weight: bold;
-    float: left;
+  font-size: 40px;
+  font-weight: bold;
+  float: left;
 }
 
 nav {
-    float: right;
+  float: right;
 }
 
 ul li {
-    display: inline-block;
-    padding: 0px 20px;
+  display: inline-block;
+  padding: 0px 20px;
 }
 
 li a {
-    font-size: 20px;
-    color: #6A5ACD;
-    text-decoration: none;
-    line-height: 40px;
-    text-transform: uppercase;
-    padding-bottom: 3px;
-    transition: 0.5s ease-in-out;
+  font-size: 20px;
+  color: #6a5acd;
+  text-decoration: none;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  transition: 0.5s ease-in-out;
 }
 
 li a:hover {
-    color: #000000;
-    border-bottom: solid 3px #6A5ACD;
+  color: #000000;
+  border-bottom: solid 3px #6a5acd;
 }
 
 li.active a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* ====================showcase========================= */
 
 .showcase {
-    min-height: 560px;
-    background-image: url("../img/show.jpg");
-    background-position: 50% 50%;
-    background-size: cover;
-    text-align: center;
-    color: #F8F8FF;
-    box-sizing: border-box;
+  min-height: 560px;
+  background-image: url("../img/show.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  text-align: center;
+  color: #f8f8ff;
+  box-sizing: border-box;
 }
 
 .title {
-    padding-top: 150px;
-    font-size: 60px;
-    margin-bottom: 10px;
+  padding-top: 150px;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 
 .showcase p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* =============Newslater==================== */
 
 .newslater {
-    min-height: 100px;
-    /* padding: 15px 0; */
-    color: #6A5ACD;
-    background: linear-gradient(to left, #C0C0C0, #DCDCDC);
+  min-height: 100px;
+  /* padding: 15px 0; */
+  color: #6a5acd;
+  background: linear-gradient(to left, #c0c0c0, #dcdcdc);
 }
 
 .newslater h1 {
-    font-size: 30px;
-    font-weight: bold;
-    float: left;
-    line-height: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  line-height: 100px;
 }
 
 .newslater form {
-    line-height: 100px;
-    float: right;
+  line-height: 100px;
+  float: right;
 }
 
 .newslater input {
-    height: 35px;
-    width: 250px;
+  height: 35px;
+  width: 250px;
 }
 
 button {
-    padding: 1px;
-    background-color: #6A5ACD;
-    font-size: 20px;
-    color: #F8F8FF;
-    height: 40px;
-    width: 100px;
-    border: 0;
+  padding: 1px;
+  background-color: #6a5acd;
+  font-size: 20px;
+  color: #f8f8ff;
+  height: 40px;
+  width: 100px;
+  border: 0;
 }
 
 /* ====================box card====================== */
 
 .box {
-    background-color: white;
-    margin: 30px 0;
+  background-color: white;
+  margin: 30px 0;
 }
 
 .box-1 {
-    float: left;
-    text-align: center;
-    width: 30%;
-    margin-left: 5px;
+  float: left;
+  text-align: center;
+  width: 30%;
+  margin-left: 40px;
 }
 
 .box-1 img {
-    width: 40%;
+  width: 40%;
 }
 
 .box-1 h3 {
-    margin: 10px 0 10px;
-    font-size: 20px;
-    font-weight: bold;
+  margin: 10px 0 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* ========================footer=================== */
 
 footer {
-    text-align: center;
-    background: linear-gradient(to right, #C0C0C0, #DCDCDC);
-    padding: 20px 0;
-    font-size: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #c0c0c0, #dcdcdc);
+  padding: 20px 0;
+  font-size: 20px;
 }
 
 span {
-    font-weight: bold;
-    color: #6A5ACD;
+  font-weight: bold;
+  color: #6a5acd;
 }
 
 /* ===================Clearfix====================== */
 
 header::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.newslater::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.box::after {
-    content: "";
-    display: table;
-    clear: both;
+.cf::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* ================Media Query================= */
 
 /* Tampilan dibawah 929px berlaku ini */
 
-@media(max-width:929px) {
+@media (max-width: 929px) {
+  .logo,
+  nav,
+  .box-1 {
+    float: none;
+  }
 
-    .logo,
-    nav,
-    .box-1 {
-        float: none;
-    }
+  .logo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
 
-    .logo {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 50px;
-    }
+  nav {
+    text-align: center;
+  }
 
-    nav {
-        text-align: center;
-    }
+  li a {
+    font-size: 30px;
+  }
 
-    li a {
-        font-size: 30px;
-    }
+  .box-1 {
+    margin: 10px auto 20px;
+    width: 70%;
+  }
 
-    .box-1 {
-        margin: 10px auto 20px;
-        width: 70%;
-    }
+  .box-1 h3 {
+    font-size: 30px;
+  }
 
-    .box-1 h3 {
-        font-size: 30px;
-    }
+  .box-1 p {
+    font-size: 23px;
+  }
 
-    .box-1 p {
-        font-size: 23px;
-    }
+  .title {
+    font-size: 70px;
+  }
 
-    .title {
-        font-size: 70px;
-    }
-
-    .showcase p {
-        font-size: 30px;
-    }
+  .showcase p {
+    font-size: 30px;
+  }
 }
 
 /* Tampilan di bawah 880px berlaku ini */
 
-@media(max-width:880px) {
-
-    .newslater h1,
-    .newslater form {
-        float: none;
-        text-align: center;
-        line-height: 50px;
-    }
+@media (max-width: 880px) {
+  .newslater h1,
+  .newslater form {
+    float: none;
+    text-align: center;
+    line-height: 50px;
+  }
 }
 
 .title {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 /* Tampilan berlaku dari 801px ke bawah */
 
-@media(max-width:801px) {
+@media (max-width: 801px) {
+  .logo h1 {
+    display: none;
+  }
 
-    .logo h1 {
-        display: none;
-    }
+  ul li,
+  button {
+    display: block;
+  }
 
+  .title {
+    padding-top: 50px;
+  }
 
-    ul li,
-    button {
-        display: block;
-    }
+  button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .title {
-        padding-top: 50px;
-    }
+  input[type="email"] {
+    width: 100%;
+    margin-bottom: 5px;
+    border: none;
+  }
 
-    button {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .newslater h1 {
+    margin-bottom: -10px;
+  }
 
-    input[type="email"] {
-        width: 100%;
-        margin-bottom: 5px;
-        border: none;
-    }
-
-    .newslater h1 {
-        margin-bottom: -10px;
-    }
-
-    .showcase p {
-        padding-top: 20px;
-    }
+  .showcase p {
+    padding-top: 20px;
+  }
 }
