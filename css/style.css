@@ -230,14 +230,18 @@ header::after {
 /* Tampilan berlaku dari 801px ke bawah */
 
 @media (max-width: 801px) {
-  .logo h1 {
+  header {
+    display: none;
+  }
+
+  /* .logo h1 {
     display: none;
   }
 
   ul li,
   button {
     display: block;
-  }
+  } */
 
   .title {
     padding-top: 50px;
